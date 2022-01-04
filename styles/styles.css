@@ -1,0 +1,88 @@
+main{
+    margin: 50px;
+    margin-right: 20%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+pre>code{
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+pre{
+    margin: 0px;
+    padding: 0px;
+}
+
+.timer{
+    display: flex;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    /* box-shadow: -1px -1px 10px rgba(0,0,255,0.4); */
+    border-radius: 50%;
+
+    color: #00f;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+    font: bold 32px "Courier New", serif;
+    text-align: center;
+    
+
+    justify-content: center;
+    align-items: center;
+
+
+    box-shadow: 16px -14px 24px 1px rgba(255,185,60,0.35), -16px 14px 24px 1px rgba(255,86,197,0.35), -16px -14px 24px 1px rgba(19,255,76,0.35), 17px 14px 24px 1px rgba(55,74,255,0.35); 
+
+    animation: timer 5s ease-in-out infinite alternate;
+}
+
+@keyframes timer {
+    to{
+        box-shadow: 10px 7px 17px 1px rgba(55,74,255,0.75),  -11px -7px 17px 1px rgba(19,255,76,0.75), -9px 7px 17px 1px rgba(255,86,197,0.75), 9px -7px 17px 1px rgba(255,185,60,0.75); 
+    }
+}
+
+.timer:hover{
+    animation: timerShake 0.3s linear infinite alternate;
+}
+
+@keyframes timerShake{
+    0%{
+        transform: translate(1px, 1px) rotate(-1deg);
+
+    }
+ 
+    50%{
+        transform: translate(-1px, -1px) rotate(1deg);
+
+    }
+}
+
+.success, .error{
+    display: block;
+    width: 30%;
+    font: 16px "Courier New", serif;
+    border-radius: 5px;
+    padding: 2px;
+}
+.success{
+    background-color: rgba(178, 218, 133,0.5);
+} 
+.error{
+    background-color: rgba(218, 160, 133,0.5);
+}
+
+
+label{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+}
