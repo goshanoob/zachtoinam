@@ -59,6 +59,5 @@ include_once 'includes/header.php';
 
     <input type="submit" value="Ответить">
 </form>
-
 <script src="../scripts/script.js"></script>
 <?php include_once 'includes/footer.php'; ?>

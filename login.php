@@ -32,5 +32,8 @@ include_once 'includes/header.php';
     <input type="text" placeholder="Фамилия Имя Отчество" name="student_fio">
     <input type="submit" value="Приступить!">
 </form>
-
+<br>
+<br>
+<a href="includes/loadTasks.php" target="_blank">Страница загрузки вопросов</a><br>
+<a href="includes/checkMark.php" target="_blank">Страница просмотра результатов</a>
 <?php include_once 'includes/footer.php'; ?>
